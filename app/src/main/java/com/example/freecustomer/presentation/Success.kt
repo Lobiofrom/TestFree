@@ -25,13 +25,16 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.domain.model.Item
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 @Composable
 fun Success(
     item: Item
 ) {
-
     val context = LocalContext.current
+
+    val format = SimpleDateFormat("dd-MM-yyyy", Locale.ROOT)
 
     Card(
         modifier = Modifier
@@ -114,5 +117,26 @@ fun Success(
             },
             modifier = Modifier.padding(start = 16.dp, bottom = 6.dp)
         )
+        val date = format.format(item.dateTimestamp)
+        val start = format.format(item.startDateTimestamp)
+        val end = format.format(item.endDateTimestamp)
+        Row(
+            modifier = Modifier.padding(6.dp),
+        ) {
+            Text(text = "Date: ")
+            Text(text = date)
+        }
+        Row(
+            modifier = Modifier.padding(6.dp),
+        ) {
+            Text(text = "Start Date: ")
+            Text(text = start)
+        }
+        Row(
+            modifier = Modifier.padding(6.dp),
+        ) {
+            Text(text = "End Date: ")
+            Text(text = end)
+        }
     }
 }
