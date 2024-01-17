@@ -46,7 +46,9 @@ fun MainScreen(
             LazyColumn(
                 modifier = modifier
             ) {
-                items(items) {
+                items(items, key = {
+                    it.description
+                }) {
                     Success(item = it)
                 }
             }
