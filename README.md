@@ -26,4 +26,4 @@ https://github.com/Lobiofrom/TestFree/assets/124072945/f90915d3-f2d2-47a1-8162-4
 
 Апк:
 
-https://1drv.ms/u/s!AnbuqWCjseexh8oLlCqoPlB29N0UTg?e=lO2y4F
+https://1drv.ms/u/s!AnbuqWCjseexh8oLlCqoPlB29N0UTg?e=bkReS6
