@@ -29,7 +29,7 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 @Composable
-fun Success(
+fun SuccessItem(
     item: Item
 ) {
     val context = LocalContext.current

@@ -20,7 +20,7 @@ class MyViewModel(
             try {
                 _state.value = States.Success(useCase.execute())
             } catch (e: Exception) {
-                _state.value = States.Error
+                _state.value = States.Error(e.message)
             }
         }
     }
